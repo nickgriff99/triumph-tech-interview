@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock Solid Christian Church — Wireframe</title>
+    <meta
+      name="description"
+      content="Single-page wireframe scaffold for Rock Solid Christian Church."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main"
+      >Skip to main content</a
+    >
+
+    <header class="site-nav">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container">
+          <a class="navbar-brand d-inline-flex align-items-center scroll-fade" href="#">
+            <img
+              class="site-logo"
+              src="assets/svgs/rsc-nav-logo.svg"
+              width="226"
+              height="55"
+              alt="Rock Solid Christian Church"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#siteNav"
+            aria-controls="siteNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="siteNav">
+            <ul class="navbar-nav mx-xl-auto mb-2 mb-xl-0 scroll-fade" style="--scroll-fade-delay: 100ms;">
+              <li class="nav-item">
+                <a target="_blank" class="nav-link" href="#">Plan a Visit</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" class="nav-link" href="#">Who We Are</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" href="/pages/notavailableyet.html" class="nav-link">Connect</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" href="/pages/notavailableyet.html" class="nav-link">Ministries</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" href="/pages/notavailableyet.html" class="nav-link">Events</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" href="/pages/nosocials.html" class="nav-link">Media</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" href="/pages/notavailableyet.html" class="nav-link site-nav__link--give">Give Online</a>
+              </li>
+              <li class="nav-item dropdown site-nav__more d-none d-xl-inline-flex align-items-center">
+                <button
+                  type="button"
+                  class="site-nav__more-toggle dropdown-toggle"
+                  id="siteNavMore"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="Open site navigation menu"
+                >
+                  <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end site-nav__dropdown" aria-labelledby="siteNavMore">
+                  <li>
+                    <a class="dropdown-item" target="_blank" href="#">Plan a Visit</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" target="_blank" href="#">Who We Are</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" target="_blank" href="/pages/notavailableyet.html">Connect</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" target="_blank" href="/pages/notavailableyet.html">Ministries</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" target="_blank" href="/pages/notavailableyet.html">Events</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" target="_blank" href="/pages/nosocials.html">Media</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item site-nav__dropdown-give" target="_blank" href="/pages/notavailableyet.html">Give Online</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a target="_blank" class="nav-link site-nav__account d-inline-flex align-items-center gap-2 scroll-fade" style="--scroll-fade-delay: 200ms;" href="https://rocksolidchristianchurch.com/create-account">
+              <i class="bi bi-person site-nav__account-icon"></i>
+              <span>Create Account</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-media" role="img" aria-label="Hero image: worship gathering">
+          <img
+            src="assets/images/hero-bg.webp"
+            alt="Hero image: worship gathering"
+            fetchpriority="high"
+            decoding="async"
+          >
+        </div>
+        <div class="hero-overlay">
+          <div class="container text-white text-center">
+            <h1 id="hero-heading" class="display-3 fw-bold mb-3 scroll-fade">
+              We&rsquo;re Glad You&rsquo;re Here
+            </h1>
+            <p class="lead mx-auto hero-subtitle scroll-fade" style="--scroll-fade-delay: 140ms;">
+              We are a thriving and diverse community of real people experiencing real life together.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center mt-4 scroll-fade" style="--scroll-fade-delay: 280ms;">
+              <a class="btn btn-light btn-lg" href="#welcome">Plan a Visit</a>
+              <a class="btn btn-outline-light btn-lg hero__btn--glass" href="#mission">About Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bar">
+          <div class="container hero-bar-inner">
+            <div class="hero-bar-center scroll-fade" style="--scroll-fade-delay: 380ms;">
+              <span class="hero-bar-label">Next Service Starts In</span>
+              <span class="hero-countdown fw-semibold text-white" id="countdown" aria-live="polite">00:00:00</span>
+            </div>
+            <ul class="list-inline mb-0 hero-social scroll-fade" style="--scroll-fade-delay: 460ms;" aria-label="Social media">
+              <li class="list-inline-item"><a href="/pages/nosocials.html" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="/pages/nosocials.html" aria-label="Twitter / X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="/pages/nosocials.html" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="/pages/nosocials.html" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="welcome" class="welcome py-5 py-md-5" aria-labelledby="welcome-heading">
+        <div class="container">
+          <p class="section-eyebrow small text-secondary mb-3 scroll-fade">
+            WELCOME TO ROCK SOLID
+          </p>
+          <div class="row g-4 g-md-5 mb-4 mb-md-5">
+            <div class="col-md-7 scroll-fade">
+              <h2 id="welcome-heading" class="fs-3 fw-bold mb-0">
+                Following the Holy Spirit, we exist to create a movement of disciple-making disciples.
+              </h2>
+            </div>
+            <div class="col-md-5 scroll-fade" style="--scroll-fade-delay: 120ms;">
+              <p class="text-secondary mb-0">
+                Rock Solid Church is committed to creating a movement of disciple-making disciples—men and women who reflect the diversity of our community, lived out in authentic unity.
+              </p>
+            </div>
+          </div>
+          <div class="ratio ratio--21x9 scroll-fade welcome__feature-media" style="--scroll-fade-delay: 200ms;">
+            <img
+              src="assets/images/jesus.webp"
+              alt="Worship moment image"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="mission"
+        class="mission"
+        aria-labelledby="mission-heading"
+      >
+        <a class="mission-notch" href="#gospel" aria-label="Scroll to gospel">
+          <i class="bi bi-arrow-down" aria-hidden="true"></i>
+        </a>
+
+        <div class="mission-waves" aria-hidden="true">
+          <span class="mission-wave mission-wave--1"></span>
+          <span class="mission-wave mission-wave--2"></span>
+          <span class="mission-wave mission-wave--3"></span>
+        </div>
+
+        <div class="container">
+          <div class="text-center mb-4 mb-md-5 scroll-fade">
+            <h2 id="mission-heading" class="display-6 fw-bold text-white mb-2">
+              Our Mission is Simple
+            </h2>
+            <p class="text-white text-opacity-75 mx-auto mission-subtitle mb-0">
+              <span class="mission__emphasis">The gospel is the good news of Jesus:</span> That Jesus lived a sinless life in my place, died the death that I deserve, and rose again to give me new life.
+            </p>
+          </div>
+
+          <div class="row g-3 g-md-4 justify-content-center">
+            <div class="col-md-4 scroll-fade">
+              <article class="card mission-card h-100 border-0">
+                <div class="card-body text-center p-4">
+                  <div class="mission-icon-wrap mb-3" aria-hidden="true">
+                    <img class="mission-icon-ring" src="assets/svgs/mission-icon-ring.svg" alt="">
+                    <span class="mission-icon-glyph">
+                      <img src="assets/svgs/mission-icon-play.svg" alt="">
+                    </span>
+                  </div>
+                  <h3 class="h5 fw-bold">Watch a Message</h3>
+                  <p class="text-secondary small mb-3">
+                    Catch up on the latest and past weekend service messages anytime, anywhere.
+                  </p>
+                  <a class="mission-link" href="/pages/nosocials.html">Catch Our Latest Message</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4 scroll-fade" style="--scroll-fade-delay: 120ms;">
+              <article class="card mission-card h-100 border-0">
+                <div class="card-body text-center p-4">
+                  <div class="mission-icon-wrap mb-3" aria-hidden="true">
+                    <img class="mission-icon-ring" src="assets/svgs/mission-icon-ring.svg" alt="">
+                    <span class="mission-icon-glyph">
+                      <img src="assets/svgs/mission-icon-pin.svg" alt="">
+                    </span>
+                  </div>
+                  <h3 class="h5 fw-bold">Find a Location</h3>
+                  <p class="text-secondary small mb-3">
+                    Easily find a campus near you. Join us in person and get connected.
+                  </p>
+                  <a class="mission-link" href="/pages/notavailableyet.html">Search Our Campuses</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4 scroll-fade" style="--scroll-fade-delay: 240ms;">
+              <article class="card mission-card h-100 border-0">
+                <div class="card-body text-center p-4">
+                  <div class="mission-icon-wrap mb-3" aria-hidden="true">
+                    <img class="mission-icon-ring" src="assets/svgs/mission-icon-ring.svg" alt="">
+                    <span class="mission-icon-glyph">
+                      <img src="assets/svgs/mission-icon-plane.svg" alt="">
+                    </span>
+                  </div>
+                  <h3 class="h5 fw-bold">Get Connected</h3>
+                  <p class="text-secondary small mb-3">
+                    Stay connected and in the loop&mdash;sign up for updates, events, and ways to get involved.
+                  </p>
+                  <a class="mission-link" href="/pages/notavailableyet.html">Contact Us</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div id="gospel" class="mission-gospel pt-md-3">
+            <p class="section-eyebrow section-eyebrow--on-dark small text-white fw-semibold mb-3 scroll-fade">
+              GOSPEL
+            </p>
+            <div class="row g-3 g-md-5 text-white">
+              <div class="col-md-7 scroll-fade" data-scroll-fade-direction="left">
+                <p class="h4 fw-bold mb-0">
+                  The gospel is what should characterize us. It should be our identity: We are a gospel people.
+                </p>
+              </div>
+              <div class="col-md-5 scroll-fade" data-scroll-fade-direction="right" style="--scroll-fade-delay: 120ms;">
+                <p class="text-white text-opacity-75 mb-0 small">
+                  <span class="mission__emphasis">The gospel is the good news of Jesus:</span> That Jesus lived a sinless life in my place, died the death that I deserved, and rose to life again. And whoever believes in him has eternal life.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ratio ratio--21x9 scroll-fade mission__feature-media">
+            <img
+              src="assets/images/jesusandapostles.webp"
+              alt="Jesus and the Apostles"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="visit"
+        class="visit py-5 py-md-5 text-center"
+        aria-labelledby="visit-heading"
+      >
+        <img
+          class="visit__rule visit__rule--left"
+          src="assets/svgs/blackline.svg"
+          alt=""
+          aria-hidden="true"
+          width="55"
+          height="5"
+        >
+        <img
+          class="visit__rule visit__rule--right"
+          src="assets/svgs/blackline.svg"
+          alt=""
+          aria-hidden="true"
+          width="55"
+          height="5"
+        >
+        <div class="container">
+          <h2 id="visit-heading" class="display-6 fw-bold mb-4 visit__heading scroll-fade">
+            ROCK SOLID CHURCH CONTINUES TO HOLD OUT
+            <span class="text-accent">LOVE</span>
+            <span class="visit__heading-muted">AND HOPE TO THE ENTIRE WORLD.</span>
+          </h2>
+          <a class="btn btn-dark btn-lg scroll-fade" href="#welcome" style="--scroll-fade-delay: 180ms;">Plan a Visit</a>
+        </div>
+      </section>
+
+      <section
+        id="volunteer"
+        class="volunteer py-5"
+        aria-labelledby="volunteer-heading"
+      >
+        <div class="volunteer__intro container text-center mb-4 mb-md-5 scroll-fade">
+          <div class="volunteer-badge mx-auto mb-3" aria-hidden="true">
+            <img
+              class="volunteer-badge__icon"
+              src="assets/svgs/volunteer-heart.svg"
+              alt=""
+              width="116"
+              height="98"
+            >
+          </div>
+          <h2 id="volunteer-heading" class="h1 fw-bold mb-2">
+            Find a Place to Volunteer
+          </h2>
+          <p class="volunteer-subtitle mx-auto">
+            Explore our ministries—find your place, grow in faith, and connect with a vibrant community!
+          </p>
+        </div>
+
+        <div class="container-fluid px-3 px-md-4">
+          <div class="volunteer-carousel-inner">
+            <div class="volunteer-swiper-viewport">
+              <div class="swiper volunteer-swiper">
+              <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="volunteer-card">
+                  <div class="volunteer-card__media">
+                    <img src="assets/images/prayerandcare.webp" alt="" loading="lazy" decoding="async">
+                  </div>
+                  <div class="volunteer-card__caption">
+                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Prayer &amp; Care<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="volunteer-card">
+                  <div class="volunteer-card__media">
+                    <img src="assets/images/kids.webp" alt="" loading="lazy" decoding="async">
+                  </div>
+                  <div class="volunteer-card__caption">
+                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Kids<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="volunteer-card">
+                  <div class="volunteer-card__media">
+                    <img src="assets/images/students.webp" alt="" loading="lazy" decoding="async">
+                  </div>
+                  <div class="volunteer-card__caption">
+                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Students<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="volunteer-card">
+                  <div class="volunteer-card__media">
+                    <img src="assets/images/worship.webp" alt="" loading="lazy" decoding="async">
+                  </div>
+                  <div class="volunteer-card__caption">
+                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Worship<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="volunteer-card">
+                  <div class="volunteer-card__media">
+                    <img src="assets/images/men.webp" alt="" loading="lazy" decoding="async">
+                  </div>
+                  <div class="volunteer-card__caption">
+                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Men<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="volunteer-card">
+                  <div class="volunteer-card__media">
+                    <img src="assets/images/women.webp" alt="" loading="lazy" decoding="async">
+                  </div>
+                  <div class="volunteer-card__caption">
+                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Women<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="volunteer-card">
+                  <div class="volunteer-card__media">
+                    <img src="assets/images/smallgroups.webp" alt="" loading="lazy" decoding="async">
+                  </div>
+                  <div class="volunteer-card__caption">
+                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Small Groups<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                  </div>
+                </article>
+              </div>
+              </div>
+              <div
+                class="swiper-scrollbar volunteer-swiper-scrollbar"
+                aria-hidden="true"
+              ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="story" aria-labelledby="story-heading">
+        <div class="container">
+          <div class="row g-4 g-lg-5 align-items-start">
+            <div class="col-lg-5 scroll-fade" data-scroll-fade-direction="left">
+              <h2 id="story-heading" class="display-6 fw-bold text-white">
+                Saved Lives Are Changed Lives.
+              </h2>
+              <p class="text-white text-opacity-75 mb-4">
+                Feature stories about how Rock Solid Church is making a difference in our city.
+              </p>
+              <a class="btn btn-primary btn-lg" href="/pages/notavailableyet.html" target="_blank">Share Your Story</a>
+            </div>
+            <div class="col-lg-7 scroll-fade" data-scroll-fade-direction="right" style="--scroll-fade-delay: 160ms;">
+              <div class="story-bento">
+                <article class="story-tile story-tile--large">
+                  <div class="story-tile__media">
+                    <img
+                      class="story-tile__img"
+                      src="assets/images/joshua.webp"
+                      alt="Joshua's Road to Peace story preview"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </div>
+                  <div class="story-tile__caption">
+                    <a target="_blank" href="/pages/notavailableyet.html" class="story-tile__title">Joshua&rsquo;s Road to Peace</a>
+                  </div>
+                </article>
+                <article class="story-tile">
+                  <div class="story-tile__media">
+                    <img
+                      class="story-tile__img"
+                      src="assets/images/byanymeans.webp"
+                      alt="By Any Means Necessary story preview"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </div>
+                  <div class="story-tile__caption">
+                    <a target="_blank" href="/pages/notavailableyet.html" class="story-tile__title">By Any Means Necessary</a>
+                  </div>
+                </article>
+                <article class="story-tile">
+                  <div class="story-tile__media">
+                    <img
+                      class="story-tile__img"
+                      src="assets/images/holdingontohope.webp"
+                      alt="Holding on to Hope story preview"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </div>
+                  <div class="story-tile__caption">
+                    <a target="_blank" href="/pages/notavailableyet.html" class="story-tile__title">Holding on to Hope</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer py-5">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-md-5">
+            <a
+              class="navbar-brand d-inline-flex align-items-center mb-3"
+              href="#"
+              aria-label="Rock Solid Christian Church"
+            >
+              <img
+                class="site-logo"
+                src="assets/svgs/rsc-footer-logo.svg"
+                width="226"
+                height="55"
+                alt=""
+              />
+            </a>
+            <address class="text-secondary small mb-3 footer-address">
+              11340 W. Bell Road, Suite 200<br />
+              Surprise, AZ 85378
+            </address>
+            <p class="text-secondary small mb-3 footer-phone">(000) 000-0000</p>
+            <ul class="list-inline mb-0 footer-social" aria-label="Social media">
+              <li class="list-inline-item">
+                <a href="/pages/nosocials.html" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/pages/nosocials.html" aria-label="Twitter / X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/pages/nosocials.html" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/pages/nosocials.html" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-7">
+            <div class="d-flex flex-column flex-sm-row justify-content-md-end align-items-sm-center gap-2 mb-4">
+              <a class="btn btn-dark btn-sm px-3" href="#welcome">PLAN A VISIT</a>
+              <a class="btn btn-outline-dark btn-sm px-3" href="#">Log In</a>
+            </div>
+            <div class="footer-link-groups">
+              <div class="footer-link-group">
+                <h3 class="h6 fw-bold text-uppercase small mb-2 footer-heading">Quick Links</h3>
+                <ul class="list-unstyled small mb-0 footer-links">
+                  <li><a href="/pages/notavailableyet.html" target="_blank">About Rock Solid</a></li>
+                  <li><a href="/pages/notavailableyet.html" target="_blank">Locations</a></li>
+                  <li><a href="/pages/notavailableyet.html" target="_blank">Events</a></li>
+                  <li><a href="/pages/nosocials.html" target="_blank">Messages</a></li>
+                  <li><a href="/pages/notavailableyet.html" target="_blank">Ministries</a></li>
+                  <li><a href="/pages/notavailableyet.html" target="_blank">Serving</a></li>
+                </ul>
+              </div>
+              <div class="footer-link-group">
+                <h3 class="h6 fw-bold text-uppercase small mb-2 footer-heading">Get In Touch</h3>
+                <ul class="list-unstyled small mb-0 footer-links">
+                  <li><a href="/pages/notavailableyet.html" target="_blank">Plan a Visit Request</a></li>
+                  <li><a href="/pages/notavailableyet.html" target="_blank">Prayer</a></li>
+                  <li><a href="/pages/notavailableyet.html" target="_blank">Get Help</a></li>
+                  <li><a href="/pages/notavailableyet.html" target="_blank">Job Openings</a></li>
+                  <li><a href="/pages/notavailableyet.html" target="_blank">Report an Issue</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-legal small text-secondary mt-5">
+          <span>&copy; 2025</span>
+          <span class="footer-legal__sep" aria-hidden="true">|</span>
+          <a href="#">Terms of Service</a>
+          <span class="footer-legal__sep" aria-hidden="true">|</span>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

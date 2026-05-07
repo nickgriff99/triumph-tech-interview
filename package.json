@@ -1,0 +1,11 @@
+{
+  "name": "triumph-technical-interview",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "webp": "node scripts/generate-webp.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.1"
+  }
+}

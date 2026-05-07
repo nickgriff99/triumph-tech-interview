@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Logs & debug
+*.log
+npm-debug.log*
+
+# Local env (secrets, machine-specific paths)
+.env
+.env.*
+!.env.example
+
+# OS noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Optional: uncomment if you treat WebP as build output only (regenerate in CI)
+# assets/images/*.webp
