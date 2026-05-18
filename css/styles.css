@@ -165,10 +165,6 @@ body {
   -webkit-backdrop-filter: blur(100px);
   font-weight: 600;
   padding: 0.5rem 0;
-  /* Center each nav-item in the pill instead of letting flex stretch them.
-     Without this, every <li> takes the full inner height of the pill and the
-     nav-link's "vertical center" is the pill's center rather than the text's
-     center, which makes the hover underline area feel like part of the link. */
   align-items: center;
 }
 
@@ -1530,6 +1526,63 @@ body {
     opacity: 1 !important;
     transform: none !important;
   }
+}
+
+/* Message modal */
+.message-modal .modal-content {
+  border-radius: var(--site-radius-lg);
+  border: none;
+  box-shadow: var(--site-shadow-hover);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .message-modal.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+  }
+
+  .message-modal.modal.show .modal-dialog {
+    animation: site-nav-dropdown-reveal 0.3s ease-out both;
+  }
+}
+
+.message-modal .modal-header {
+  border-bottom-color: rgba(46, 35, 32, 0.08);
+}
+
+.message-modal .modal-footer {
+  border-top-color: rgba(46, 35, 32, 0.08);
+}
+
+.message-modal .btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.message-modal .btn-primary:hover,
+.message-modal .btn-primary:focus-visible {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+/* Countdown confetti */
+.countdown-confetti {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.countdown-confetti__particle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 8px;
+  border-radius: 1px;
+  opacity: 1;
 }
 
 /* Placeholder landing pages */

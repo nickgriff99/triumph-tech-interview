@@ -34,37 +34,25 @@
       }
 
       var burst = document.createElement("div");
+      burst.className = "countdown-confetti";
       burst.setAttribute("aria-hidden", "true");
-      burst.style.position = "absolute";
-      burst.style.left = "50%";
-      burst.style.top = "50%";
-      burst.style.width = "0";
-      burst.style.height = "0";
-      burst.style.pointerEvents = "none";
-      burst.style.zIndex = "5";
       host.appendChild(burst);
 
-      var particleCount = 20;
+      var particleCount = 12;
       var createdAt = Date.now();
-      var lifetimeMs = 1100;
+      var lifetimeMs = 800;
       var particles = [];
 
       for (var i = 0; i < particleCount; i += 1) {
         var particle = document.createElement("span");
-        particle.style.position = "absolute";
-        particle.style.left = "0";
-        particle.style.top = "0";
-        particle.style.width = "6px";
-        particle.style.height = "10px";
-        particle.style.borderRadius = "1px";
+        particle.className = "countdown-confetti__particle";
         particle.style.backgroundColor =
           confettiColors[Math.floor(Math.random() * confettiColors.length)];
-        particle.style.opacity = "1";
         particle.style.transform = "translate3d(0, 0, 0) rotate(0deg)";
         burst.appendChild(particle);
 
         var angle = (-100 + Math.random() * 20 + (i / particleCount) * 50) * (Math.PI / 180);
-        var speed = 120 + Math.random() * 90;
+        var speed = 90 + Math.random() * 60;
         var spin = (Math.random() * 720 - 360) | 0;
         particles.push({
           el: particle,
@@ -137,7 +125,7 @@
   var heroSection = document.querySelector(".hero");
   var heroMedia = document.querySelector(".hero-media");
   var heroImg = heroMedia && heroMedia.querySelector("img");
-  /** Vertical nudge (px); keep in sync with .hero-media img transform in styles.css. */
+  // Hero img base offset (px); matches .hero-media img in styles.css
   var HERO_IMG_BASE_OFFSET_Y = 46;
   if (heroSection && heroMedia && heroImg) {
     var heroReducedMotion =
@@ -380,8 +368,6 @@
           });
         },
         {
-          // Trigger slightly before the element edges hit the viewport, and
-          // require ~12% visibility so tiny slivers near edges don't flicker.
           rootMargin: "0px 0px -10% 0px",
           threshold: 0.12,
         }

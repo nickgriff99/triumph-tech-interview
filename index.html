@@ -62,25 +62,25 @@
           <div class="collapse navbar-collapse" id="siteNav">
             <ul class="navbar-nav mx-xl-auto mb-2 mb-xl-0 scroll-fade" style="--scroll-fade-delay: 100ms;">
               <li class="nav-item">
-                <a target="_blank" class="nav-link" href="#">Plan a Visit</a>
+                <a class="nav-link" href="#">Plan a Visit</a>
               </li>
               <li class="nav-item">
-                <a target="_blank" class="nav-link" href="#">Who We Are</a>
+                <a class="nav-link" href="#">Who We Are</a>
               </li>
               <li class="nav-item">
-                <a target="_blank" href="/pages/notavailableyet.html" class="nav-link">Connect</a>
+                <a href="/pages/notavailableyet.html" class="nav-link">Connect</a>
               </li>
               <li class="nav-item">
-                <a target="_blank" href="/pages/notavailableyet.html" class="nav-link">Ministries</a>
+                <a href="/pages/notavailableyet.html" class="nav-link">Ministries</a>
               </li>
               <li class="nav-item">
-                <a target="_blank" href="/pages/notavailableyet.html" class="nav-link">Events</a>
+                <a href="/pages/notavailableyet.html" class="nav-link">Events</a>
               </li>
               <li class="nav-item">
-                <a target="_blank" href="/pages/nosocials.html" class="nav-link">Media</a>
+                <a href="/pages/nosocials.html" class="nav-link">Media</a>
               </li>
               <li class="nav-item">
-                <a target="_blank" href="/pages/notavailableyet.html" class="nav-link site-nav__link--give">Give Online</a>
+                <a href="/pages/notavailableyet.html" class="nav-link site-nav__link--give">Give Online</a>
               </li>
               <li class="nav-item dropdown site-nav__more d-none d-xl-inline-flex align-items-center">
                 <button
@@ -97,30 +97,30 @@
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end site-nav__dropdown" aria-labelledby="siteNavMore">
                   <li>
-                    <a class="dropdown-item" target="_blank" href="#">Plan a Visit</a>
+                    <a class="dropdown-item" href="#">Plan a Visit</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" target="_blank" href="#">Who We Are</a>
+                    <a class="dropdown-item" href="#">Who We Are</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" target="_blank" href="/pages/notavailableyet.html">Connect</a>
+                    <a class="dropdown-item" href="/pages/notavailableyet.html">Connect</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" target="_blank" href="/pages/notavailableyet.html">Ministries</a>
+                    <a class="dropdown-item" href="/pages/notavailableyet.html">Ministries</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" target="_blank" href="/pages/notavailableyet.html">Events</a>
+                    <a class="dropdown-item" href="/pages/notavailableyet.html">Events</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" target="_blank" href="/pages/nosocials.html">Media</a>
+                    <a class="dropdown-item" href="/pages/nosocials.html">Media</a>
                   </li>
                   <li>
-                    <a class="dropdown-item site-nav__dropdown-give" target="_blank" href="/pages/notavailableyet.html">Give Online</a>
+                    <a class="dropdown-item site-nav__dropdown-give" href="/pages/notavailableyet.html">Give Online</a>
                   </li>
                 </ul>
               </li>
             </ul>
-            <a target="_blank" class="nav-link site-nav__account d-inline-flex align-items-center gap-2 scroll-fade" style="--scroll-fade-delay: 200ms;" href="https://rocksolidchristianchurch.com/create-account">
+            <a target="_blank" rel="noopener noreferrer" class="nav-link site-nav__account d-inline-flex align-items-center gap-2 scroll-fade" style="--scroll-fade-delay: 200ms;" href="https://rocksolidchristianchurch.com/create-account">
               <i class="bi bi-person site-nav__account-icon"></i>
               <span>Create Account</span>
             </a>
@@ -131,7 +131,7 @@
 
     <main id="main">
       <section class="hero" aria-labelledby="hero-heading">
-        <div class="hero-media" role="img" aria-label="Hero image: worship gathering">
+        <div class="hero-media">
           <img
             src="assets/images/hero-bg.webp"
             alt="Hero image: worship gathering"
@@ -169,7 +169,7 @@
         </div>
       </section>
 
-      <section id="welcome" class="welcome py-5 py-md-5" aria-labelledby="welcome-heading">
+      <section id="welcome" class="welcome py-5" aria-labelledby="welcome-heading">
         <div class="container">
           <p class="section-eyebrow small text-secondary mb-3 scroll-fade">
             WELCOME TO ROCK SOLID
@@ -236,7 +236,12 @@
                   <p class="text-secondary small mb-3">
                     Catch up on the latest and past weekend service messages anytime, anywhere.
                   </p>
-                  <a class="mission-link" href="/pages/nosocials.html">Catch Our Latest Message</a>
+                  <a
+                    class="mission-link"
+                    href="#messageModal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#messageModal"
+                  >Catch Our Latest Message</a>
                 </div>
               </article>
             </div>
@@ -307,7 +312,7 @@
 
       <section
         id="visit"
-        class="visit py-5 py-md-5 text-center"
+        class="visit py-5 text-center"
         aria-labelledby="visit-heading"
       >
         <img
@@ -367,50 +372,50 @@
               <div class="swiper-slide">
                 <article class="volunteer-card">
                   <div class="volunteer-card__media">
-                    <img src="assets/images/prayerandcare.webp" alt="" loading="lazy" decoding="async">
+                    <img src="assets/images/prayerandcare.webp" alt="Prayer &amp; Care" loading="lazy" decoding="async">
                   </div>
                   <div class="volunteer-card__caption">
-                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Prayer &amp; Care<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                    <a href="/pages/notavailableyet.html" class="volunteer-card__title">Prayer &amp; Care<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
                   </div>
                 </article>
               </div>
               <div class="swiper-slide">
                 <article class="volunteer-card">
                   <div class="volunteer-card__media">
-                    <img src="assets/images/kids.webp" alt="" loading="lazy" decoding="async">
+                    <img src="assets/images/kids.webp" alt="Kids" loading="lazy" decoding="async">
                   </div>
                   <div class="volunteer-card__caption">
-                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Kids<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                    <a href="/pages/notavailableyet.html" class="volunteer-card__title">Kids<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
                   </div>
                 </article>
               </div>
               <div class="swiper-slide">
                 <article class="volunteer-card">
                   <div class="volunteer-card__media">
-                    <img src="assets/images/students.webp" alt="" loading="lazy" decoding="async">
+                    <img src="assets/images/students.webp" alt="Students" loading="lazy" decoding="async">
                   </div>
                   <div class="volunteer-card__caption">
-                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Students<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                    <a href="/pages/notavailableyet.html" class="volunteer-card__title">Students<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
                   </div>
                 </article>
               </div>
               <div class="swiper-slide">
                 <article class="volunteer-card">
                   <div class="volunteer-card__media">
-                    <img src="assets/images/worship.webp" alt="" loading="lazy" decoding="async">
+                    <img src="assets/images/worship.webp" alt="Worship" loading="lazy" decoding="async">
                   </div>
                   <div class="volunteer-card__caption">
-                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Worship<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                    <a href="/pages/notavailableyet.html" class="volunteer-card__title">Worship<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
                   </div>
                 </article>
               </div>
               <div class="swiper-slide">
                 <article class="volunteer-card">
                   <div class="volunteer-card__media">
-                    <img src="assets/images/men.webp" alt="" loading="lazy" decoding="async">
+                    <img src="assets/images/men.webp" alt="Men" loading="lazy" decoding="async">
                   </div>
                   <div class="volunteer-card__caption">
-                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Men<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                    <a href="/pages/notavailableyet.html" class="volunteer-card__title">Men<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
                   </div>
                 </article>
               </div>
@@ -420,17 +425,17 @@
                     <img src="assets/images/women.webp" alt="" loading="lazy" decoding="async">
                   </div>
                   <div class="volunteer-card__caption">
-                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Women<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                    <a href="/pages/notavailableyet.html" class="volunteer-card__title">Women<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
                   </div>
                 </article>
               </div>
               <div class="swiper-slide">
                 <article class="volunteer-card">
                   <div class="volunteer-card__media">
-                    <img src="assets/images/smallgroups.webp" alt="" loading="lazy" decoding="async">
+                    <img src="assets/images/smallgroups.webp" alt="Small Groups" loading="lazy" decoding="async">
                   </div>
                   <div class="volunteer-card__caption">
-                    <a target="_blank" href="/pages/notavailableyet.html" class="volunteer-card__title">Small Groups<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
+                    <a href="/pages/notavailableyet.html" class="volunteer-card__title">Small Groups<span class="bi bi-chevron-right volunteer-card__chevron" aria-hidden="true"></span></a>
                   </div>
                 </article>
               </div>
@@ -455,7 +460,7 @@
               <p class="text-white text-opacity-75 mb-4">
                 Feature stories about how Rock Solid Church is making a difference in our city.
               </p>
-              <a class="btn btn-primary btn-lg" href="/pages/notavailableyet.html" target="_blank">Share Your Story</a>
+              <a class="btn btn-primary btn-lg" href="/pages/notavailableyet.html">Share Your Story</a>
             </div>
             <div class="col-lg-7 scroll-fade" data-scroll-fade-direction="right" style="--scroll-fade-delay: 160ms;">
               <div class="story-bento">
@@ -470,7 +475,7 @@
                     >
                   </div>
                   <div class="story-tile__caption">
-                    <a target="_blank" href="/pages/notavailableyet.html" class="story-tile__title">Joshua&rsquo;s Road to Peace</a>
+                    <a href="/pages/notavailableyet.html" class="story-tile__title">Joshua&rsquo;s Road to Peace</a>
                   </div>
                 </article>
                 <article class="story-tile">
@@ -484,7 +489,7 @@
                     >
                   </div>
                   <div class="story-tile__caption">
-                    <a target="_blank" href="/pages/notavailableyet.html" class="story-tile__title">By Any Means Necessary</a>
+                    <a href="/pages/notavailableyet.html" class="story-tile__title">By Any Means Necessary</a>
                   </div>
                 </article>
                 <article class="story-tile">
@@ -498,7 +503,7 @@
                     >
                   </div>
                   <div class="story-tile__caption">
-                    <a target="_blank" href="/pages/notavailableyet.html" class="story-tile__title">Holding on to Hope</a>
+                    <a href="/pages/notavailableyet.html" class="story-tile__title">Holding on to Hope</a>
                   </div>
                 </article>
               </div>
@@ -554,22 +559,22 @@
               <div class="footer-link-group">
                 <h3 class="h6 fw-bold text-uppercase small mb-2 footer-heading">Quick Links</h3>
                 <ul class="list-unstyled small mb-0 footer-links">
-                  <li><a href="/pages/notavailableyet.html" target="_blank">About Rock Solid</a></li>
-                  <li><a href="/pages/notavailableyet.html" target="_blank">Locations</a></li>
-                  <li><a href="/pages/notavailableyet.html" target="_blank">Events</a></li>
-                  <li><a href="/pages/nosocials.html" target="_blank">Messages</a></li>
-                  <li><a href="/pages/notavailableyet.html" target="_blank">Ministries</a></li>
-                  <li><a href="/pages/notavailableyet.html" target="_blank">Serving</a></li>
+                  <li><a href="/pages/notavailableyet.html">About Rock Solid</a></li>
+                  <li><a href="/pages/notavailableyet.html">Locations</a></li>
+                  <li><a href="/pages/notavailableyet.html">Events</a></li>
+                  <li><a href="/pages/nosocials.html">Messages</a></li>
+                  <li><a href="/pages/notavailableyet.html">Ministries</a></li>
+                  <li><a href="/pages/notavailableyet.html">Serving</a></li>
                 </ul>
               </div>
               <div class="footer-link-group">
                 <h3 class="h6 fw-bold text-uppercase small mb-2 footer-heading">Get In Touch</h3>
                 <ul class="list-unstyled small mb-0 footer-links">
-                  <li><a href="/pages/notavailableyet.html" target="_blank">Plan a Visit Request</a></li>
-                  <li><a href="/pages/notavailableyet.html" target="_blank">Prayer</a></li>
-                  <li><a href="/pages/notavailableyet.html" target="_blank">Get Help</a></li>
-                  <li><a href="/pages/notavailableyet.html" target="_blank">Job Openings</a></li>
-                  <li><a href="/pages/notavailableyet.html" target="_blank">Report an Issue</a></li>
+                  <li><a href="/pages/notavailableyet.html">Plan a Visit Request</a></li>
+                  <li><a href="/pages/notavailableyet.html">Prayer</a></li>
+                  <li><a href="/pages/notavailableyet.html">Get Help</a></li>
+                  <li><a href="/pages/notavailableyet.html">Job Openings</a></li>
+                  <li><a href="/pages/notavailableyet.html">Report an Issue</a></li>
                 </ul>
               </div>
             </div>
@@ -585,6 +590,38 @@
         </div>
       </div>
     </footer>
+
+    <div
+      class="modal fade message-modal"
+      id="messageModal"
+      tabindex="-1"
+      aria-labelledby="messageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5 fw-bold" id="messageModalLabel">Watch a Message</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary small mb-0">
+              Catch up on the latest and past weekend service messages anytime, anywhere.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" href="/pages/nosocials.html">
+              Catch Our Latest Message
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
