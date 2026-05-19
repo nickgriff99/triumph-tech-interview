@@ -399,16 +399,6 @@ body {
     box-shadow: 0 1rem 2rem rgba(46, 35, 32, 0.35);
   }
 
-  .site-nav #siteNav.collapsing.site-nav__collapse--animating-in {
-    transform-origin: top center;
-    animation: site-nav-dropdown-reveal 0.3s ease-out both;
-  }
-
-  .site-nav #siteNav.collapsing.site-nav__collapse--animating-out {
-    transform-origin: top center;
-    animation: site-nav-dropdown-dismiss 0.3s ease-in both;
-  }
-
   .site-nav .navbar-nav {
     background-color: transparent;
     border: none;
@@ -1564,7 +1554,14 @@ body {
   border-color: var(--accent-dark);
 }
 
-/* Countdown confetti */
+/* Countdown confetti — burst driven by CSS keyframes (JS only positions dots + palette) */
+@keyframes countdown-confetti-pop {
+  to {
+    opacity: 0;
+    transform: translate3d(var(--confetti-dx), var(--confetti-dy), 0) scale(0.35);
+  }
+}
+
 .countdown-confetti {
   position: absolute;
   left: 50%;
@@ -1579,10 +1576,11 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 5px;
-  height: 8px;
+  width: 6px;
+  height: 9px;
   border-radius: 1px;
   opacity: 1;
+  animation: countdown-confetti-pop 0.42s ease-out forwards;
 }
 
 /* Placeholder landing pages */
