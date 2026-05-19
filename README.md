@@ -27,8 +27,9 @@ Hi there! I have created the following single-page church landing wireframe usin
 ### Animations, hovers, and UI state
 
 - **`css/styles.css`** — `transition` on interactive elements; `@keyframes` (e.g. mission waves, nav dropdown treatment).
-- **Scroll reveals** — `.scroll-fade` styles in CSS; **`js/main.js`** adds `.is-visible` via `IntersectionObserver`.
-- **Bootstrap behavior** — navbar **collapse** height transition; **dropdown** enhanced with an exit-animation hook in **`js/main.js`**.
+- **Scroll reveals** — `.scroll-fade` styles in CSS; **`js/main.js`** toggles `.is-visible` via `IntersectionObserver` (elements can re-hide when scrolled away unless `data-scroll-fade-once="true"`); respects reduced motion.
+- **Hero** — pointer-driven background pan + scroll-linked fade on hero copy (`--hero-scroll`), both off when `prefers-reduced-motion: reduce`.
+- **Bootstrap behavior** — navbar **collapse** / **dropdown** use standard Bootstrap JS; mobile nav closes after a menu link tap in **`js/main.js`** (custom collapse/dropdown choreography removed for maintainability).
 
 ### Slider library (Swiper)
 
