@@ -1554,7 +1554,7 @@ body {
   border-color: var(--accent-dark);
 }
 
-/* Countdown confetti — burst driven by CSS keyframes (JS only positions dots + palette) */
+/* Countdown confetti */
 @keyframes countdown-confetti-pop {
   to {
     opacity: 0;
