@@ -317,6 +317,7 @@
 
   // --- Volunteer carousel ---
   if (typeof Swiper !== "undefined") {
+    var volunteerSection = document.getElementById("volunteer");
     var volunteerViewport = document.querySelector(".volunteer-swiper-viewport");
 
     function volunteerEdgeFades(swiper) {
@@ -331,6 +332,34 @@
         "volunteer-swiper-viewport--show-fade-right",
         !swiper.isEnd
       );
+    }
+
+    function bindVolunteerAutoplayToViewport(swiper) {
+      if (!swiper.autoplay || !volunteerSection) {
+        return;
+      }
+
+      swiper.autoplay.stop();
+
+      if (!("IntersectionObserver" in window)) {
+        swiper.autoplay.start();
+        return;
+      }
+
+      var autoplayObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              swiper.autoplay.start();
+            } else {
+              swiper.autoplay.stop();
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      autoplayObserver.observe(volunteerSection);
     }
 
     var swiperReducedMotion = prefersReducedMotion();
@@ -377,7 +406,12 @@
         },
       },
       on: {
-        init: volunteerEdgeFades,
+        init: function (swiper) {
+          volunteerEdgeFades(swiper);
+          if (!swiperReducedMotion) {
+            bindVolunteerAutoplayToViewport(swiper);
+          }
+        },
         resize: volunteerEdgeFades,
         slideChange: volunteerEdgeFades,
         transitionEnd: volunteerEdgeFades,
